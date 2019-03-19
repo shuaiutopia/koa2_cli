@@ -1,0 +1,30 @@
+<style>
+    .captcha {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .captcha input.capIpt {
+        width: calc( 100% - 110px);
+        display: inline-block;
+    }
+
+    .captcha .svg {
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+<div class="captcha">
+    <input name="captcha" class="layui-input-inline capIpt" type="text" placeholder="请输入验证码">
+    <div class="svg">
+        <img src="/captcha" alt="" >
+    </div>
+
+</div>
+<script>
+    $(".captcha .svg").on("click",function(){
+        $(this).find("img").attr("src","/captcha?"+Math.random())
+    });
+</script>
