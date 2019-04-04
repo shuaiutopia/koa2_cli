@@ -1,6 +1,6 @@
 {
     "apps": [{
-        "name": "koa2基础框架",
+        "name": "yaochiwan",
         "script": "./app.js",
         "cwd": "./",
         "watch": true,

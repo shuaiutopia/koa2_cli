@@ -31,5 +31,5 @@ module.exports = async (ctx,next)=>{
              </script>`
          }
     }
-    await next();  //这里必须写 await ,否则静态资源服务器会报错,不知道为什么????
+    await next(); 
 }
