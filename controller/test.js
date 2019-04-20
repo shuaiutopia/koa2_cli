@@ -2,6 +2,7 @@ const Base = require("./base");
 class Test extends Base{
   constructor(){
     super();
+    // 所有方法均可访问这些属性
     this.db = "xxx";
     this.testData = Math.random();
   }

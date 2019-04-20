@@ -1,3 +1,4 @@
+// 配置文件放在了各个功能模块需要的地方了
 let curEnv = process.env.NODE_ENV || "pro";
 let config;
 if(curEnv == "pro"){
