@@ -20,7 +20,7 @@ perSchema.methods.speak = function () {
     console.log(greeting);
 }
 
-// 这里的 model 应该可以理解为 collection(集合,表) 的抽象模型,但他却又是document的构造函数!!!一般我们会把构造函数理解为实例化对象的抽象模型,这?????
+// 这里的 model 应该可以理解为 collection(集合,表) 的抽象模型,但他却又是document的构造函数!!!一般我们会把构造函数理解为实例化对象的抽象模型,这!!!!
 // 需要把这个 schema 编译成一个 Model , 他是 document 的构造函数,可以通过这个构造函数指向create/find等操作,显然这些操作属于静态方法.
 let UserM = mongoose.model("User",perSchema);
 
