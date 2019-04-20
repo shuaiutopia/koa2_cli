@@ -68,7 +68,7 @@ module.exports = {
     return hash.digest('hex');
   },
   sha1(stringToSign, secret) { // 一般stringToSign为base64字符串
-    var signature;
+    let signature;
     return signature = crypto.createHmac('sha1', secret).update(stringToSign).digest().toString('base64');
   },
 
