@@ -23,7 +23,8 @@
     "mongoose": "^5.4.13",
     "mysql2": "^1.6.2",
     "sequelize": "^4.41.0",
-    "svg-captcha": "^1.3.11"
+    "svg-captcha": "^1.3.11",
+    "tracer": "^0.9.8"
   },
   "devDependencies": {
     "glob": "^7.1.3",

@@ -1,5 +1,4 @@
 let loginR = require("koa-router")();
-let userM = require("../model/userM");
 let loginC = require("../controller/login");
 loginR.prefix("/login");
 

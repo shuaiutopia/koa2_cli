@@ -1,5 +1,4 @@
 let homeR = require("koa-router")();
-let personM = require("../model/userM");
 let homeC = require("../controller/home");
 
 homeR.prefix('/home');
