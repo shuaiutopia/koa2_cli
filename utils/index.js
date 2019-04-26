@@ -1,4 +1,5 @@
 const fs = require("fs");
+const crypto = require("crypto");
 //这里封装一些常用的函数
 module.exports = {
   //文件夹的名字使用 年+月+日如 20181102
@@ -60,7 +61,7 @@ module.exports = {
   getBase64(sourceString) { // sourceString是要转base64的字符串
     return new Buffer(sourceString).toString('base64');
   },
-  md5(buffer) { // 参数buffer new Buffer(string)
+  md5(buffer) { // 参数buffer new Buffer(string)或则普通字符串均可
     var hash;
     hash = crypto.createHash('md5');
     hash.update(buffer);

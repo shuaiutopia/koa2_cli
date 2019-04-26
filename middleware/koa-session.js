@@ -22,7 +22,6 @@ const store = {
   set(key, session) {
     const filePath = path.resolve('sessionTemp', `${key}.js`);
     const content = `module.exports = ${JSON.stringify(session)};`;
-
     fs.writeFileSync(filePath, content);
   },
 
