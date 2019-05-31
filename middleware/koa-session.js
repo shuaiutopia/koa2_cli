@@ -1,12 +1,11 @@
 const koaSession = require("koa-session");
 const path = require("path");
 const fs = require("fs");
+const sessionDir = path.resolve('sessionTemp');
+!fs.existsSync(sessionDir) && fs.mkdirSync(sessionDir);
 const store = {
   get(key) {
-    const sessionDir = path.resolve('sessionTemp');
-    !fs.existsSync(sessionDir) && fs.mkdirSync(sessionDir);
     const files = fs.readdirSync(sessionDir);
-
     for (let i = 0; i < files.length; i++) {
       if (files[i].startsWith(key)) {
         const filepath = path.resolve(sessionDir, files[i]);
